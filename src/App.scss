@@ -1,0 +1,33 @@
+
+
+$grid-border-color:red;
+$cell-border-color:black;
+
+.App{
+  @apply text-center;
+}
+.player{
+  @apply mb-12;
+}
+
+.game-grid {
+  @apply grid grid-cols-3 m-auto;
+  width: 600px;
+  height:600px;
+  outline: 1px solid $grid-border-color;
+
+}
+
+.cell{
+  width: 200px;
+  height: 200px;
+  outline: 1px solid $cell-border-color;
+  text-transform: uppercase;
+  display:grid;
+  place-items: center;
+  font-size: 8rem;
+}
+
+.options{
+  margin-top: 3rem;
+}
