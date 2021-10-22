@@ -3,3 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.idea/.gitignore
+.idea/deployment.xml
+.idea/encodings.xml
+.idea/modules.xml
+.idea/tictactoe.iml
+.idea/vcs.xml
