@@ -3,11 +3,16 @@
 $grid-border-color:red;
 $cell-border-color:black;
 
+body {
+  @apply bg-red-400;
+}
 .App{
   @apply text-center;
+
 }
 .player{
   @apply mb-12;
+
 }
 
 .game-grid {
@@ -15,6 +20,7 @@ $cell-border-color:black;
   width: 600px;
   height:600px;
   outline: 1px solid $grid-border-color;
+     @apply bg-white shadow rounded-xl;
 
 }
 
@@ -26,8 +32,30 @@ $cell-border-color:black;
   display:grid;
   place-items: center;
   font-size: 8rem;
+  &:hover {
+    background: red;
+    cursor:pointer;
+  }
+  &:active {
+    background:yellow;
+  }
+}
+
+.winner {
+  position :absolute;
+  background: black;
+  opacity:0.5;
+  left:0;
+right:0;
+  top:0;
+  bottom:0;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  z-index:1000;
 }
 
 .options{
   margin-top: 3rem;
 }
+
